@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/locationDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding">
+
+        <TextView
+                android:id="@+id/detailsTagTextView"
+                style="@style/defaultTextStyle"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Work"/>
+
+        <ImageView
+                android:id="@+id/detailsCoordinatesIcon"
+                android:layout_width="@dimen/default_padding"
+                android:layout_height="@dimen/default_padding"
+                android:src="@drawable/ic_coordinates"
+                android:tint="@color/white"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailsTagTextView"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:id="@+id/latitudeTextView"
+                style="@style/defaultTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                app:layout_constraintTop_toTopOf="@id/detailsCoordinatesIcon"
+                app:layout_constraintBottom_toBottomOf="@id/detailsCoordinatesIcon"
+                app:layout_constraintEnd_toStartOf="@id/detailsCoordinatesIcon"
+                tools:text="43.12345"/>
+
+        <TextView
+                android:id="@+id/longitudeTextView"
+                style="@style/defaultTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                app:layout_constraintTop_toTopOf="@id/detailsCoordinatesIcon"
+                app:layout_constraintBottom_toBottomOf="@id/detailsCoordinatesIcon"
+                app:layout_constraintStart_toEndOf="@id/detailsCoordinatesIcon"
+                tools:text="23.12345"/>
+
+        <ImageView
+                android:id="@+id/addressIcon"
+                android:layout_width="@dimen/default_icon_dimen"
+                android:layout_height="@dimen/default_icon_dimen"
+                android:src="@drawable/ic_address"
+                android:tint="@color/white"
+                android:layout_marginTop="@dimen/default_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailsCoordinatesIcon"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:id="@+id/addressTextView"
+                style="@style/defaultTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/addressIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="str. Dambovitei nr. 7"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+            android:layout_width="@dimen/default_icon_dimen"
+            android:layout_height="@dimen/default_icon_dimen"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/triangle_green"
+            tools:ignore="ContentDescription"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/locationDetailsMap"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              tools:context=".screen.main.MapsActivity"/>
+
+</LinearLayout>

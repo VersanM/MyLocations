@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- Empty Layout -->
+    <string name="no_items">No Items</string>
+    <string name="error_something_went_wrong">Something Went Wrong</string>
+    <string name="error_retry">Retry</string>
+
+    <!--Errors-->
+    <string name="unknown_error">Unknown error</string>
+    <string name="no_internet">No internet connection.</string>
+    <string name="bad_request">Bad Request</string>
+
+    <!--Permissions-->
+    <string name="allow_permission">Allow permission</string>
+    <string name="location_permission_message">We need location permission to process the distance to every saved location.</string>
+    <string name="requesting_location_access">Requesting location access</string>
+    <string name="do_you_want_to_open_location_settings">Do you want to open location settings?</string>
+
+    <!-- Location List -->
+    <string name="location_list_title">My Locations</string>
+    <string name="calculating_distance_message">Calculating..</string>
+    <string name="not_available_distance_message">Not Available</string>
+
+    <!--Location Details-->
+    <string name="location_details_title">Location Details</string>
+    <string name="delete_location_message">Are you sure you want to delete the selected location?</string>
+
+    <!--Dialogs-->
+    <string name="add_location_dialog_title">Add location data</string>
+    <string name="edit_location_dialog_title">Edit location data</string>
+    <string name="latitude_hint">Latitude</string>
+    <string name="longitude_hint">Longitude</string>
+    <string name="tag_hint">Tag</string>
+    <string name="address_hint">Address</string>
+</resources>

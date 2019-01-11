@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="default_padding">20dp</dimen>
+
+    <dimen name="default_rounded_corner_radius">30dp</dimen>
+    <dimen name="default_icon_dimen">30dp</dimen>
+
+    <!-- Empty Layout -->
+    <dimen name="empty_layout_button_height">60dp</dimen>
+
+    <!--Text-->
+    <dimen name="large_text">20sp</dimen>
+
+</resources>
